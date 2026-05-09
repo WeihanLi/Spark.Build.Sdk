@@ -1,0 +1,27 @@
+<Project>
+
+  <PropertyGroup>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <IncludeSymbols>true</IncludeSymbols>
+
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <EnablePackageValidation>true</EnablePackageValidation>
+
+    <PackageReadmeFile
+      Condition="Exists('README.md')">
+      README.md
+    </PackageReadmeFile>
+
+    <PackageLicenseExpression
+      Condition="'$(PackageLicenseExpression)' == ''">
+      MIT
+    </PackageLicenseExpression>
+
+  </PropertyGroup>
+
+</Project>
