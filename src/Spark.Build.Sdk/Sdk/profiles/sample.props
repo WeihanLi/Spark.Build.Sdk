@@ -1,0 +1,16 @@
+<Project>
+
+  <PropertyGroup>
+
+    <IsPackable>false</IsPackable>
+
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <NoWarn>
+      $(NoWarn);
+      CS1591
+    </NoWarn>
+
+  </PropertyGroup>
+
+</Project>
