@@ -11,18 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - uses: actions/checkout@v6
+      - name: Setup .NET SDK
+        uses: WeihanLi/dotnet-install@v0.2.0
         with:
-          dotnet-version: 10.0.x
+          version: 10.0.x
 
-      - name: Restore
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Pack
-        run: dotnet pack src/Spark.Build.Sdk/Spark.Build.Sdk.csproj --configuration Release --no-build
+      - name: SDK Info
+        run: dotnet --info
