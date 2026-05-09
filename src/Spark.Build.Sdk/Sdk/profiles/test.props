@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+
+    <IsPackable>false</IsPackable>
+
+    <TestProject>true</TestProject>
+
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+  </PropertyGroup>
+
+</Project>
