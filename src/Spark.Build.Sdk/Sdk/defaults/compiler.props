@@ -1,0 +1,24 @@
+<Project>
+
+  <PropertyGroup>
+
+    <LangVersion Condition="'$(LangVersion)' == ''">
+      preview
+    </LangVersion>
+
+    <Nullable Condition="'$(Nullable)' == ''">
+      enable
+    </Nullable>
+
+    <ImplicitUsings Condition="'$(ImplicitUsings)' == ''">
+      enable
+    </ImplicitUsings>
+
+    <TreatWarningsAsErrors
+      Condition="'$(TreatWarningsAsErrors)' == ''">
+      true
+    </TreatWarningsAsErrors>
+
+  </PropertyGroup>
+
+</Project>
