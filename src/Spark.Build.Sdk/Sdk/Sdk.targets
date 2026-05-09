@@ -1,0 +1,13 @@
+<Project>
+
+  <Import
+    Project="profiles/$(SparkBuildProfile).targets"
+    Condition="Exists('profiles/$(SparkBuildProfile).targets')" />
+
+  <Target Name="SparkBuildSdkInfo" BeforeTargets="BeforeBuild">
+    <Message
+      Importance="Low"
+      Text="Using Spark.Build.Sdk profile: $(SparkBuildProfile)" />
+  </Target>
+
+</Project>
