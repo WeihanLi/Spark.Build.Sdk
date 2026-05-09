@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Spark.Build.Sdk/Spark.Build.Sdk.csproj" />
+  </Folder>
+</Solution>

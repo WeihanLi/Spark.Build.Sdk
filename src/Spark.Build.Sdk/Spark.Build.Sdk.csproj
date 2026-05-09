@@ -8,7 +8,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Spark.Build.Sdk</PackageId>
     <Authors>WeihanLi</Authors>
-    <Description>Modern .NET 10 MSBuild SDK conventions for OSS projects.</Description>
+    <Description>Modern MSBuild SDK conventions for OSS projects.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/WeihanLi/Spark.Build.Sdk</RepositoryUrl>
