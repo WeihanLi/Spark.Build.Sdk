@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageType>MSBuildSdk</PackageType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Spark.Build.Sdk</PackageId>
+    <Authors>WeihanLi</Authors>
+    <Description>Modern .NET 10 MSBuild SDK conventions for OSS projects.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/WeihanLi/Spark.Build.Sdk</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Sdk\**\*" Pack="true" PackagePath="Sdk" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.8.118" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
