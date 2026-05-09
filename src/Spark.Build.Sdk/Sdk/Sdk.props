@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup>
+    <SparkBuildProfile Condition="'$(SparkBuildProfile)' == ''">
+      library
+    </SparkBuildProfile>
+  </PropertyGroup>
+
+  <Import Project="defaults/compiler.props" />
+  <Import Project="defaults/security.props" />
+  <Import Project="defaults/deterministic.props" />
+  <Import Project="defaults/packaging.props" />
+
+  <Import
+    Project="profiles/$(SparkBuildProfile).props"
+    Condition="Exists('profiles/$(SparkBuildProfile).props')" />
+
+</Project>
