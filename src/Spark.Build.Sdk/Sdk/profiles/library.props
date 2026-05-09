@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+
+    <IsPackable>true</IsPackable>
+
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <ApiCompatStrictMode>true</ApiCompatStrictMode>
+
+  </PropertyGroup>
+
+</Project>
