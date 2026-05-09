@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup>
+
+    <ContinuousIntegrationBuild
+      Condition="'$(CI)' == 'true'">
+      true
+    </ContinuousIntegrationBuild>
+
+    <Deterministic>true</Deterministic>
+
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <DebugType>portable</DebugType>
+
+  </PropertyGroup>
+
+</Project>
